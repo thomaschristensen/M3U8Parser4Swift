@@ -1,0 +1,22 @@
+PODS:
+  - M3U8Parser4Swift (0.1.0)
+  - Nimble (3.2.0)
+  - Quick (0.9.3)
+
+DEPENDENCIES:
+  - M3U8Parser4Swift (from `../`)
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  M3U8Parser4Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  M3U8Parser4Swift: 142c80fb76187af48c0b6989d0ce21a723a8ffda
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
+
+PODFILE CHECKSUM: 0663f7527e055ae70190aa971ee1b0f1069d54f6
+
+COCOAPODS: 1.0.1
