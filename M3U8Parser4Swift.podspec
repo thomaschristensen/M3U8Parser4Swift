@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint M3U8Parser4Swift.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'M3U8Parser4Swift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of M3U8Parser4Swift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Parsing of M3U8 manifest files for Swift'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    M3U8Parser4Swift reads and writes HTTP Live Streaming manifest files.
+    Use it to fetch a Master manifest and for parsing it. Supports the
+    Internet-Draft version 7. Can be used to throw events when various elements
+    have been parsed. Use it to contruct a new manifest from scratch.
+    Supports Master and Media playlist manifest files.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/M3U8Parser4Swift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/thomaschristensen/M3U8Parser4Swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Thomas Christensen' => 'tchristensen@nordija.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/M3U8Parser4Swift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'https://github.com/thomaschristensen/M3U8Parser4Swift.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'M3U8Parser4Swift/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'M3U8Parser4Swift' => ['M3U8Parser4Swift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SwiftyBeaver', '~> 0.6.5'
 end
