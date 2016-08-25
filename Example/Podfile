@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'M3U8Parser4Swift_Example' do
+  pod 'M3U8Parser4Swift', :path => '../'
+
+  target 'M3U8Parser4Swift_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+  end
+end
